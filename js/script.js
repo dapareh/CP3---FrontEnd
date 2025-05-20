@@ -1,0 +1,1 @@
+// O código foi modularizado. Use js/main.js para inicializar o site.

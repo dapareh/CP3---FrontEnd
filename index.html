@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint Project - Pokémon</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Fixed Navigation Menu -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">CP 3</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Início</a></li>
+                <li><a href="#team" class="nav-item">Integrantes</a></li>
+                <li><a href="#pokemon" class="nav-item">Pokemons</a></li>
+                <li><a href="#cards" class="nav-item">Cartas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+        <div class="section-content">
+            <div class="main-title-img">
+                <h1 class="main-title">Checkpoint Project</h1>
+            </div>
+            <div class="start-btn-img">
+                <button id="start-btn" class="pixel-btn">Start</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team-section">
+        <div class="section-content">
+            <h2 class="choose-character">Choose your character</h2>
+            <div class="character-box">
+                <img src="src/imgs/seta-hover.png" alt="Seta" class="character-arrow">
+                <span class="character-name">Davi Daparé - RM 560721</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pokemon Section -->
+    <section id="pokemon" class="section pokemon-section">
+        <div class="section-content">
+            <h2 class="discover-title">Descubra os pokemons</h2>
+            
+            <div class="pokemon-container">
+                <div class="pokemon-filters">
+                    <div class="filter-option active" data-filter="all">
+                        <div class="filter-triangle"></div>
+                        <span>Todos</span>
+                    </div>
+                    <div class="filter-option" data-filter="water">
+                        <div class="filter-triangle"></div>
+                        <span>Água</span>
+                    </div>
+                    <div class="filter-option" data-filter="fire">
+                        <div class="filter-triangle"></div>
+                        <span>Fogo</span>
+                    </div>
+                    <div class="filter-option" data-filter="grass">
+                        <div class="filter-triangle"></div>
+                        <span>Planta</span>
+                    </div>
+                    <div class="filter-option" data-filter="electric">
+                        <div class="filter-triangle"></div>
+                        <span>Elétrico</span>
+                    </div>
+                    <div class="filter-option" data-filter="ice">
+                        <div class="filter-triangle"></div>
+                        <span>Gelo</span>
+                    </div>
+                </div>
+                
+                <div class="pokemon-grid">
+                    <div class="pokemon-item" data-type="grass" data-name="Bulbasaur">
+                        <div class="pokemon-sprite"><img src="src/imgs/bulbasaur.png" alt="Bulbasaur"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="fire" data-name="Charmander">
+                        <div class="pokemon-sprite"><img src="src/imgs/charmander.png" alt="Charmander"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="normal" data-name="Clefairy">
+                        <div class="pokemon-sprite"><img src="src/imgs/clefairy.png" alt="Clefairy"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="normal" data-name="Eevee">
+                        <div class="pokemon-sprite"><img src="src/imgs/eevee.png" alt="Eevee"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="fire" data-name="Growlithe">
+                        <div class="pokemon-sprite"><img src="src/imgs/growlithe.png" alt="Growlithe"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="normal" data-name="Jigglypuff">
+                        <div class="pokemon-sprite"><img src="src/imgs/jigglypuff.png" alt="Jigglypuff"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="water" data-name="Krabby">
+                        <div class="pokemon-sprite"><img src="src/imgs/krabby.png" alt="Krabby"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="water" data-name="Lapras">
+                        <div class="pokemon-sprite"><img src="src/imgs/lapras.png" alt="Lapras"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="flying" data-name="Pidgey">
+                        <div class="pokemon-sprite"><img src="src/imgs/pidgey.png" alt="Pidgey"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="electric" data-name="Pikachu">
+                        <div class="pokemon-sprite"><img src="src/imgs/pikachu.png" alt="Pikachu"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="fire" data-name="Ponyta">
+                        <div class="pokemon-sprite"><img src="src/imgs/ponyta.png" alt="Ponyta"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="normal" data-name="Snorlax">
+                        <div class="pokemon-sprite"><img src="src/imgs/snorlax.png" alt="Snorlax"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="water" data-name="Squirtle">
+                        <div class="pokemon-sprite"><img src="src/imgs/squirtle.png" alt="Squirtle"></div>
+                    </div>
+                    <div class="pokemon-item" data-type="flying" data-name="Swablu">
+                        <div class="pokemon-sprite"><img src="src/imgs/swablu.png" alt="Swablu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pokemon Modal -->
+        <div class="modal-overlay" id="pokemon-modal-overlay">
+            <div class="pokemon-modal">
+                <button class="modal-close">✕</button>
+                <h3 class="modal-header" id="modal-pokemon-name">Bulbasaur</h3>
+                
+                <div class="modal-content">
+                    <div class="modal-info-item">
+                        <span class="modal-info-label">Altura:</span>
+                        <span id="modal-pokemon-height">0.7 m</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <span class="modal-info-label">Peso:</span>
+                        <span id="modal-pokemon-weight">6.9 kg</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <span class="modal-info-label">Categoria:</span>
+                        <span id="modal-pokemon-category">Seed</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <span class="modal-info-label">Habilidades:</span>
+                        <span id="modal-pokemon-abilities">Overgrow</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <span class="modal-info-label">Tipo:</span>
+                        <span id="modal-pokemon-type">🌱</span>
+                    </div>
+                    <div class="modal-info-item">
+                        <span class="modal-info-label">Fraqueza:</span>
+                        <span id="modal-pokemon-weakness">🔥</span>
+                    </div>
+                </div>
+                
+                <div class="pokemon-evolution" id="pokemon-evolution">
+                    <!-- As imagens de evolução serão inseridas via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="section cards-section">
+        <div class="section-content">
+            <h2 class="create-card-title">Crie sua<br>própria carta<br>especial</h2>
+            
+            <div class="custom-card-container">
+                <div class="card-form-container">
+                    <form id="card-creator-form" class="card-form">
+                        <div class="form-field">
+                            <label for="card-name">Nome da carta:</label>
+                            <input type="text" id="card-name" class="card-input" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="card-hp">Quantidade de vida:</label>
+                            <input type="number" id="card-hp" class="card-input" min="10" max="300" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="card-pokemon">Pokemon:</label>
+                            <select id="card-pokemon" class="card-select" required>
+                                <option value="" disabled selected>Selecione o pokemon</option>
+                                <option value="pikachu" data-type="electric">Pikachu</option>
+                                <option value="charmander" data-type="fire">Charmander</option>
+                                <option value="squirtle" data-type="water">Squirtle</option>
+                                <option value="bulbasaur" data-type="grass">Bulbasaur</option>
+                                <option value="jigglypuff" data-type="normal">Jigglypuff</option>
+                                <option value="mewtwo" data-type="psychic">Mewtwo</option>
+                                <option value="articuno" data-type="ice">Articuno</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="card-attack">Ataque:</label>
+                            <input type="text" id="card-attack" class="card-input" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="card-category">Categoria:</label>
+                            <select id="card-category" class="card-select" required>
+                                <option value="" disabled selected>Selecione a categoria</option>
+                                <option value="common">Comum</option>
+                                <option value="rare">Rara</option>
+                                <option value="ultra-rare">Ultra Rara</option>
+                                <option value="legendary">Lendária</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="card-resistance">Resistência:</label>
+                            <input type="text" id="card-resistance" class="card-input" required>
+                        </div>
+                        
+                        <button type="submit" class="submit-card-btn">Enviar</button>
+                    </form>
+                </div>
+                
+                <div class="card-preview-container">
+                    <div class="custom-pokemon-card" id="card-preview">
+                        <div class="card-inner-border"></div>
+                        <div class="card-top-section">
+                            <span class="custom-card-name" id="preview-name">Nome da Carta</span>
+                            <span class="custom-card-hp" id="preview-hp">HP 0</span>
+                        </div>
+                        
+                        <div class="custom-card-image">
+                            <div class="custom-card-image-placeholder" id="preview-image"></div>
+                        </div>
+                        
+                        <div class="custom-card-details">
+                            <div class="custom-card-attack">
+                                <div class="attack-name" id="preview-attack">Ataque</div>
+                            </div>
+                            
+                            <div class="custom-card-resistance">
+                                <span id="preview-resistance">Resistência</span>
+                            </div>
+                        </div>
+                        
+                        <div class="custom-card-footer">
+                            <span id="preview-category">Categoria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-background-image"></div>
+        <div class="footer-content">
+            <h2 class="footer-title">Explore e divirta-se</h2>
+            
+            <div class="footer-info-container">
+                <div class="footer-info-block">
+                    <span class="footer-info-label">FIAP:</span>
+                    <span class="footer-info-text">Engenharia de Software</span>
+                </div>
+                
+                <div class="footer-info-block">
+                    <span class="footer-info-text">Davi Daparé</span>
+                </div>
+                
+                <div class="footer-info-block">
+                    <span class="footer-info-label">São Paulo:</span>
+                </div>
+                
+                <div class="footer-info-block">
+                    <span class="footer-info-label">Telefone:</span>
+                    <span class="footer-info-text">(11) 9999-9999</span>
+                </div>
+                
+                <div class="footer-info-block">
+                    <span class="footer-info-label">E-mail:</span>
+                    <span class="footer-info-text">davidapare@fiap.com.br</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
